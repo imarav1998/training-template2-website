@@ -1,0 +1,91 @@
+*{
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+}
+$font1: Arial, Helvetica, sans-serif;
+$font2: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+$color1: #fdfdfd;
+$color2: rgb(68, 62, 62);
+$color3:rgba(68, 62, 62, 0.877);
+@mixin up{
+    text-transform:uppercase;
+}
+@mixin low{
+    text-transform:lowercase;
+}
+@mixin button1{
+    padding: 15px;
+    background: rgb(222, 228, 230);
+    border:1px solid rgb(167, 200, 207);
+    @include up;
+    font-family: $font2;
+    font-weight: 500;
+    color: $color2;
+    text-align: center;
+}
+@mixin head{
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+    &-1{
+        padding: 50px 0 15px;
+        color: $color2;
+        font-size: 30px;
+    }
+    &-2{
+        font-family: $font2;
+        color: $color2;
+        font-size: 18px;
+        font-weight: 500;
+    }
+}
+a{
+    color: $color1;
+    text-decoration: none;
+}
+.dp1:hover {
+    .nav-links-dp-1{
+        display: block;
+    }
+}
+.dp2:hover {
+    .nav-links-dp-2{
+        display: block;
+    }
+}
+.dp3:hover {
+    .nav-links-dp-3{
+        display: block;
+    }
+}
+.dp4:hover {
+    .nav-links-dp-4{
+        display: block;
+    }
+}
+
+@mixin head1{
+    width: 100%;
+    &-1{
+        padding: 20px 0 1px;
+        font-size: 18px;
+    }
+    &-2{
+        font-size: 10px;
+    }
+}
+@mixin button2{
+    padding: 10px;
+    font-size:12px;
+}
+@mixin head2{
+    width: 100%;
+    &-1{
+        padding: 20px 0 1px;
+        font-size: 25px;
+    }
+    &-2{
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,1109 @@
+@import 'config';
+
+.home{
+    background:linear-gradient(to right,rgba(0, 0, 0, 0.63),rgba(0, 0, 0, 0.63)), url('../images/01.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 60px 0 100px;
+    &-font{
+        padding: 250px 0 40px 0;
+        width: 50%;
+        margin: 0 auto;
+        &-head{
+            color: $color1;
+            font-size: 70px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        &-p{
+            padding: 20px 0 25px;
+            width: 75%;
+            color: $color1;
+            font-family: $font2;
+            font-size: 20px;
+            margin: 0 auto;
+            text-align: center;
+        }
+    }
+    &-search{
+        width: 25%;
+        margin:0 auto;
+        display: flex;
+        &-email{
+            width: 85%;
+            padding: 15px 0;
+            opacity: 0.5;
+            &::-webkit-input-placeholder{
+                font-size: 18px;
+                color: rgba(49, 49, 49, 0.26);
+            }
+        }
+        i{
+            text-align: center;
+            width:15%;
+            background: rgb(240, 243, 243);
+            padding: 15px 0;
+            font-size: 20px;
+            color: $color2;
+        }
+        padding: 0 0 80px 0;
+    }
+}
+.nav{
+    display: flex;
+    width: 75%;
+    margin: 0 auto;
+    border-width: 1px 0 1px 0;
+    border-color: rgba(255, 255, 255, 0.26);
+    border-style: solid;
+    &-icon{
+        padding: 22px 0;
+        color: $color1;
+        @include up;
+        font-size: 30px;
+        width: 35%;
+        margin: 0 auto 0 2%;
+    }
+    &-links{
+        width: 65%;
+        margin: 0 auto;
+        li{
+            list-style: none;
+            display: inline-block;
+            padding: 30px 9px;
+            color: $color1;
+            font-size: 15px;
+            font-weight: 500;
+            font-family: $font2;
+            position: relative;
+            @include up;
+            i{
+                vertical-align: top;
+            }
+            &:hover{
+                background: rgba(109, 130, 136, 0.582);
+                cursor: pointer;
+
+            }
+        }
+        &-dp-1{
+            display: none;
+        }
+        &-dp-1 ul{  
+            padding: 30px 0px 0;
+            position: absolute;
+            left:0;
+            li{
+                padding: 15px 12px;
+                width: 200px;
+                background-color: rgba(109, 130, 136, 0.582);
+                border: 1px solid rgba(0, 0, 0, 0.479);
+                &:hover{
+                    background-color: rgb(109, 130, 136);
+                }
+            }
+        }
+        &-dp-2{
+            display: none;
+        }
+        &-dp-2 ul{
+            position: absolute;
+            left: 100%;
+            top:-65%;
+        }
+        &-dp-3{
+            display: none;
+        }
+        &-dp-3 ul{  
+            padding: 30px 0px 0;
+            position: absolute;
+            left:0;
+            li{
+                padding: 15px 12px;
+                width: 200px;
+                background-color: rgba(109, 130, 136, 0.582);
+                border: 1px solid rgba(0, 0, 0, 0.479);
+                &:hover{
+                    background-color: rgb(109, 130, 136);
+                }
+            }
+        }
+        &-dp-4{
+            display: none;
+        }
+        &-dp-4 ul{
+            position: absolute;
+            left: 100%;
+            top:-65%;
+        }
+    }
+}
+
+/*--- 2nd page----------------------------------------------------------------------------------------------------------------------------*/
+
+.page2{
+    padding: 50px 0;
+    &-head{
+        @include head;
+    }
+    &-main{
+        width: 80%;
+        display: flex;
+        margin: 0 auto;
+        text-align: center;
+        padding: 80px 0;
+        &-content{
+            i{
+                color: rgb(124, 148, 160);
+                padding: 0 0 25px 0;
+            }
+            &-head{
+                font-size: 25px;
+                color: $color2;
+                padding-bottom: 30px;
+            }
+            p{
+                color: $color2;
+                font-family: $font2;
+                font-weight: 500;
+                width: 85%;
+                margin: 0 auto;
+                padding-bottom: 30px;
+            }
+            &-btn{
+                @include button1;
+                width: 50%;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+/*--- page 3-----------------------------------------------------------------------------------------------------------*/
+
+.page3{
+    background-color: rgb(240, 240, 240);
+    padding: 50px 0 100px;
+    &-head{
+        @include head;
+    }
+    &-main{
+        width: 75%;
+        margin: 0 auto;
+        &-p{
+            padding: 100px 0 60px 0;
+            word-spacing: 12px;
+            font-size: 18px;
+            @include up;
+            font-family:$font2 ;
+            font-weight: 500;
+            text-align: center;
+            color: $color2;
+        }
+        &-pic{
+            margin-top: 0 auto;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-column-gap:15px;
+            grid-row-gap: 15px;
+            padding-bottom: 80px;
+        }
+    }
+    &-btn{
+        @include button1;
+        width: 12%;
+        margin: 0 auto;
+    }
+}
+
+/*--- page 4--------------------------------------------------------------------------------------------------------------*/
+
+.page4{
+    padding: 50px 0 100px;
+    &-head{
+        @include head;
+    }
+    &-main{
+        display: flex;
+        width: 80%;
+        margin: 0 auto;
+        padding:80px 0  0;
+        &-content{
+            width: 30%;
+            margin: 0 auto;
+            &-1{
+                width: 95%;
+                border-bottom: 1px solid rgba(139, 139, 139, 0.356);
+                font-family: $font2;
+                color: $color2;
+                padding: 30px 0 10px;
+            }
+            &-2{
+                color: $color2;
+                font-size: 22px;
+                padding: 30px 0 15px;
+            }
+            &-3{
+                word-spacing: 5px;
+                font-family: $font2;
+                color: rgb(101, 143, 161);
+                i{
+                    color: $color2;
+                }
+            }
+            &-4{
+                color: $color2;
+                font-family: $font2;
+                padding: 30px 0;
+                font-weight: 500;
+            }
+            &-btn{
+                @include button1;
+                width: 40%;
+            }
+        }
+    }
+}
+/*---- page 5--------------------------------------------------------------------------------------------------------*/
+
+.page5{
+    background:linear-gradient(to right,rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../images/01.png);
+    padding: 60px 0 100px;
+    &-head{
+        width: 40%;
+    margin: 0 auto;
+    text-align: center;
+    &-1{
+        padding: 30px 0 15px;
+        color: $color1;
+        font-size: 30px;
+    }
+    &-2{
+        padding: 0 0 80px;
+        font-family: $font2;
+        color: $color1;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    }
+    &-main{
+        display: flex;
+        width:90%;
+        margin: 0 auto;
+        &-content{
+            display: flex;
+            margin: 0 auto;
+            color: $color1;
+            img{
+                margin: 0 auto auto;
+                border-radius: 50%;
+            }
+            &-des{
+                width: 75%;
+                margin: 0 auto;
+                &-1{
+                    font-family:$font2;
+                    font-weight: 500;
+                }
+                &-2{
+                    font-size: 20px;
+                    padding: 30px 0 0;
+                }
+                &-3{
+                    font-family:$font2;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+.title{
+    padding: 80px 0;
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    &-head{
+        color: $color2;
+        font-size: 25px;
+        width: 75%;
+        padding: 12px 0;
+    }
+    &-btn{
+        margin-right: 0;
+        @include button1;
+    }
+}
+/*-----page 6--------------------------------------------------------------------------------------------------------*/
+
+.page6{
+    padding: 80px 0 100px;
+    background-color: rgb(47, 52, 54);
+    &-main{
+        border-bottom: 1px solid rgba(80, 80, 80, 0.5);
+        display:flex;
+        width:80%;
+        margin: 0 auto;
+        color: rgb(211, 211, 211);
+        &-1{
+            width: 30%;
+            margin: 0 auto;
+            &-head{
+            padding: 0 0 30px;
+            font-size: 22px;
+            color: $color1;
+            }
+            &-des{
+                font-family: $font2;
+                padding: 0 0 30px;
+                font-weight: 500;
+            }
+            i{
+                font-size: 30px;
+                letter-spacing: 10px;
+                padding: 20px 0 40px;
+            }
+        }
+        &-2{
+            width: 30%;
+            margin: 0 auto;
+            &-head{
+                @extend .page6-main-1-head;
+            }
+            &-des{
+                font-family: $font2;
+                padding: 0 0 20px;
+                font-weight: 500;
+            }
+            form input[type="text"], input[type="email"]{
+                width: 100%;
+                padding: 10px 0;
+                margin-bottom: 2%;
+                background: rgb(103, 136, 146);
+                border: none;
+                &::-webkit-input-placeholder{
+                    font-size: 18px;
+                    padding-left: 10px;
+                    color: rgb(99, 99, 99);
+                }
+            }
+            form input[type="submit"]{
+                padding: 10px;
+                background: rgb(222, 228, 230);
+                border:1px solid rgb(167, 200, 207);
+                @include up;
+                font-family: $font2;
+                font-weight: 500;
+                color: $color2;
+                text-align: center;
+                width: 30%;
+            }
+        }
+        &-3{
+            width: 30%;
+            margin: 0 auto;
+            &-head{
+                @extend .page6-main-1-head;
+            }
+            &-img{
+                display: grid;
+                grid-template-columns: auto auto auto;
+                grid-row-gap: 10px;
+            }
+        }
+    }
+}
+.cont{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    padding-top: 80px;
+    &-content{
+        width: 25%;
+        margin: 0 auto;
+        display: flex;
+        color: rgb(211, 211, 211);
+        font-family: $font2;
+        i{
+            font-size: 22px;
+            padding: 10px 0;
+        }
+        &-des{
+            width: 80%;
+            margin: 0 auto;
+            h3{
+                font-size: 22px;
+            }
+            p{
+                font-weight: 500;
+            }
+        }
+    } 
+}
+/*-----------footer------------------------------------------------------------------------------------------------*/
+
+.footer{
+    padding: 30px 0;
+    background-color: rgb(43, 45, 51);
+    color: $color1;
+    font-family: $font2;
+    font-size: 20px;
+    display: flex;
+    &-1{
+        margin: 0 auto;
+    }
+    &-2{
+        margin: 0 auto;
+    }
+}
+
+/*----responsiveness---------------------------------------------------------------------------------------------------------*/
+
+/*-----mobile responsive---------------------------------------------------------------------------------------------------------*/
+
+@media only screen and (min-width:300px) and (max-width:767px){
+    .home{
+        padding: 60px 0 100px;
+        &-font{
+            padding: 180px 0 40px 0;
+            width: 100%;
+            &-head{
+                font-size: 30px;
+            }
+            &-p{
+                padding: 20px 0 25px;
+                width: 100%;
+                font-size: 10px;
+            }
+        }
+        &-search{
+            width: 90%;
+            &-email{
+                padding: 10px 0;
+                &::-webkit-input-placeholder{
+                    font-size: 12px;
+                }
+            }
+            i{
+                padding: 10px 0;
+                font-size: 18px;
+            }
+            padding: 0 0 20px 0;
+        }
+    }
+    .nav{
+        width: 100%;
+        &-icon{
+            padding: 10px 0;
+            font-size: 10px;
+            width: 20%;
+        }
+        &-links{
+            width: 80%;
+            li{
+                padding: 14px 1px;
+                font-size: 6px;
+            }
+            &-dp-1 ul{  
+                padding: 20px 0px 0;
+                top: 15px;
+                li{
+                    padding: 12px 10px;
+                    width: 80px;
+                }
+            }
+            &-dp-3 ul{  
+                padding: 20px 0px 0;
+                top: 15px;
+                li{
+                    padding: 12px 10px;
+                    width: 80px;
+                }
+            }
+            &-dp-4 ul{
+                top:-70%;
+            }
+            &-dp-2 ul{
+                top:-70%;
+            }
+        }
+    }
+/*----page 2--------------------*/
+
+.page2{
+    padding: 30px 0;
+    &-head{
+        @include head1;
+    }
+    &-main{
+        width: 80%;
+        padding: 40px 0;
+        display: block;
+        &-content{
+            i{
+                padding: 50px 0 10px 0;
+                :first-child{
+                    padding: 0px 0 10px 0;
+                }
+            }
+            &-head{
+                font-size: 20px;
+                padding-bottom: 15px;
+            }
+            p{
+                width: 90%;
+                font-size: 13px;
+                padding-bottom: 15px;
+            }
+            &-btn{
+                @include button2;
+            }
+        }
+    }
+}
+/*------- page 3------------------------------------*/
+
+.page3{
+    padding: 50px 0 100px;
+    &-head{
+        @include head1;
+    }
+    &-main{
+        width: 75%;
+        &-p{
+            padding: 50px 0 30px 0;
+            word-spacing: 5px;
+            font-size: 8px;
+        }
+        &-pic{
+            display: block;
+            padding-bottom: 80px;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    &-btn{
+        @include button2;
+        width: 50%;
+    }
+}
+
+/*----page 4---------------------------------------*/
+
+
+.page4{
+    padding: 50px 0;
+    &-head{
+        @include head1;
+    }
+    &-main{
+        display: block;
+        width: 100%;
+        padding:80px 0  0;
+        &-content{
+            width: 90%;
+            padding-bottom: 80px;
+            img{
+                width: 100%;
+            }
+            &-1{
+                text-align: center;
+                width: 95%;
+                padding: 10px 0;
+                font-size: 12px;
+            }
+            &-2{
+                text-align: center;
+                font-size: 18px;
+                padding: 10px 0 ;
+            }
+            &-3{
+                text-align: center;
+                word-spacing: 1px;
+                font-size: 12px;
+            }
+            &-4{
+                font-size: 10px;
+                text-align: center;
+                padding: 15px 0;
+            }
+            &-btn{
+                @include button2;
+                width: 40%;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+/*------page 5------------*/
+
+
+.page5{
+    padding: 30px 0 50px;
+    &-head{
+        @include head1;
+    }
+    &-main{
+        display: block;
+        &-content{
+            padding-bottom: 40px;
+            display: flex;
+            img{
+                width: 15%;
+            }
+            &-des{
+                width: 75%;
+                &-1{
+                    font-size: 8px;
+                }
+                &-2{
+                    font-size: 18px;
+                    padding: 10px 0 0;
+                }
+                &-3{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+.title{
+    padding: 40px 0;
+    display: block;
+    width: 90%;
+    &-head{
+        margin: 0 auto;
+        text-align: center;
+        font-size: 15px;
+        width: 100%;
+        padding: 6px 0;
+    }
+    &-btn{
+        margin: 0 auto;
+        width: 60%;
+        @include button2;
+    }
+}
+
+/*---page 6--------*/
+
+.page6{
+    padding: 80px 0 40px;
+    &-main{
+        display:block;
+        width:100%;
+        &-1{
+            width: 90%;
+            &-head{
+            padding: 0 0 30px;
+            font-size: 20px;
+            }
+            &-des{
+                font-size: 12px;
+                padding: 0 0 10px;
+            }
+            i{
+                font-size: 20px;
+                padding: 20px 0 40px;
+            }
+            padding-bottom: 50px;
+        }
+        &-2{
+            width: 90%;
+            &-des{
+                padding: 0 0 20px;
+                font-size: 12px;
+            }
+            form input[type="text"], input[type="email"]{
+                padding: 8px 0;
+                &::-webkit-input-placeholder{
+                    font-size: 12px;
+                }
+            }
+            form input[type="submit"]{
+                padding: 8px;
+                font-weight: 500;
+            }
+            padding-bottom: 50px;
+        }
+        &-3{
+            width: 90%;
+            &-img{
+                img{
+                    width: 100%;
+                }
+                grid-gap: 5px;
+            }
+            padding-bottom: 50px;
+        }
+    }
+}
+
+.cont{
+    width: 90%;
+    display: block;
+    padding-top: 40px;
+    margin: 0 auto;
+    &-content{
+        width: 100%;
+        display: flex;
+        padding-bottom: 20px;
+        i{
+            font-size: 15px;
+            padding: 0;
+        }
+        &-des{
+            width: 90%;
+            display: flex;
+            h3{
+                font-size: 10px;
+            }
+            p{
+                font-size: 10px;
+                margin: 0 auto;
+                text-align: justify;
+            }
+        }
+    } 
+}
+
+/*--- footer-------*/
+
+
+.footer{
+    padding: 20px 0;
+    font-size: 8px;
+}
+
+}
+
+/*----- laptops and tablets-------------*/
+
+@media only screen and (min-width:768px) and (max-width:1439px){
+    .home{
+        &-font{
+            width: 70%;
+            &-head{
+                font-size: 40px;
+            }
+            &-p{
+                padding: 20px 0 25px;
+                width: 75%;
+                font-size: 12px;
+            }
+        }
+        &-search{
+            width: 35%;
+            &-email{
+                width: 85%;
+                padding: 10px 0;
+                &::-webkit-input-placeholder{
+                    font-size: 15px;
+                }
+            }
+            i{
+                width:15%;
+                padding: 8px 0;
+                font-size: 20px;
+            }
+            padding: 0 0 80px 0;
+        }
+    }
+    .nav{
+        width: 75%;
+        &-icon{
+            font-size: 15px;
+            width: 20%;
+        }
+        &-links{
+            width: 80%;
+            li{
+                padding: 25px 5px;
+                font-size: 10px;
+            }
+            &-dp-1 ul{  
+                padding: 30px 0px 0;
+                top: 35px;
+                li{
+                    padding: 15px 12px;
+                    width: 200px;
+                }
+            }
+            &-dp-3 ul{  
+                padding: 30px 0px 0;
+                top: 35px;
+            }
+            &-dp-4 ul{
+                top:-65%;
+            }
+            &-dp-2 ul{
+                top:-65%;
+            }
+        }
+    }
+
+    /*--- page 2 -------*/
+    .page2{
+        &-head{
+            @include head2;
+        }
+        &-main{
+            width: 100%;
+            &-content{
+                p{
+                    font-size: 12px;
+                }
+                &-btn{
+                    @include button2;
+                    width: 60%;
+                }
+            }
+        }
+    }
+
+/*---- page 3 ------------*/
+
+.page3{
+    padding: 50px 0 100px;
+    &-head{
+        @include head2;
+    }
+    &-main{
+        width: 80%;
+        &-p{
+            word-spacing: 10px;
+            font-size: 15px;
+        }
+        &-pic{
+            img{
+                width: 100%;
+            }
+            padding-bottom: 40px;
+        }
+    }
+    &-btn{
+        @include button2;
+        width: 20%;
+    }
+}
+
+/*--- page 4---------------*/
+
+.page4{
+    &-head{
+        @include head2;
+    }
+    &-main{
+        width: 90%;
+        &-content{
+            img{
+                width: 100%;
+            }
+            width: 30%;
+            &-1{
+                width: 95%;
+                font-size: 12px;
+            }
+            &-2{
+                font-size: 15px;
+            }
+            &-3{
+                font-size: 12px;
+            }
+            &-4{
+                font-size: 12px;
+            }
+            &-btn{
+                @include button2;
+                width: 50%;
+            }
+        }
+    }
+}
+
+/*----page 5------------*/
+
+
+.page5{
+    &-head{
+    @include head2;
+    }
+    &-main{
+        width:95%;
+        &-content{
+
+            img{
+                width: 20%;
+            }
+            &-des{
+                width: 75%;
+                &-1{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+.title{
+    width: 85%;
+    &-head{
+        font-size: 18px;
+        width: 80%;
+    }
+    &-btn{
+        @include button2;
+        width: 30%;
+    }
+}
+
+
+/*--- page 6----------*/
+
+.page6{
+    &-main{
+        width:90%;
+        &-1{
+            padding-bottom: 50px;
+            &-head{
+            font-size: 15px;
+            }
+            &-des{
+                font-size: 12px;
+                padding-bottom: 0;
+            }
+            i{
+                font-size: 20px;
+            }
+        }
+        &-2{
+            padding-bottom: 50px;
+            &-des{
+                font-size: 12px;
+            }
+            form input[type="text"], input[type="email"]{
+                &::-webkit-input-placeholder{
+                    font-size: 15px;
+                }
+            }
+            form input[type="submit"]{
+                padding: 10px;
+                width: 30%;
+                font-size: 12px;
+            }
+        }
+        &-3{
+            padding-bottom: 50px;
+            &-img{
+                img{
+                    width: 100%;
+                }
+                grid-gap: 10px;
+            }
+        }
+    }
+}
+.cont{
+    width: 90%;
+    padding-top: 80px;
+    &-content{
+        width: 25%;
+        i{
+            width: 5%;
+            font-size: 15px;
+            padding:4px 0 8px 0;
+        }
+        &-des{
+            width: 85%;
+            margin: 0 auto;
+            h3{
+                font-size: 14px;
+            }
+            p{
+                font-size: 10px;
+            }
+        }
+    } 
+}
+
+/*---- footer-----------*/
+
+.footer{
+    font-size: 15px;
+}
+
+}
+
+@media only screen and (min-width:375px) and (max-width:424px){
+    .nav{
+        &-links{
+            li{
+                font-size: 7px;
+            }
+            &-dp-1 ul{  
+                top: 17px;
+            }
+            &-dp-3 ul{  
+                top: 17px;
+            }
+            &-dp-4 ul{
+                top:-65%;
+            }
+            &-dp-2 ul{
+                top:-65%;
+            }
+        }
+            
+            
+        }
+    }
+@media only screen and (min-width:425px) and (max-width:767px){
+    .nav{
+        &-icon{
+            font-size: 15px;
+        }
+        &-links{
+            li{
+                font-size: 8px;
+            }
+            &-dp-1 ul{  
+                top: 18px;
+            }
+            &-dp-3 ul{  
+                top: 18px;
+            }
+            &-dp-4 ul{
+                top:-60%;
+            }
+            &-dp-2 ul{
+                top:-60%;
+            }
+            
+        }
+    }
+}
+@media only screen and (min-width:1024px) and (max-width:1439px){
+    .nav{
+        &-icon{
+            font-size: 20px;
+        }
+        &-links{
+            li{
+                font-size: 14px;
+            }
+            &-dp-1 ul{  
+                top: 40px;
+            }
+            &-dp-3 ul{  
+                top: 40px;
+            }
+            &-dp-4 ul{
+                top:-65%;
+            }
+            &-dp-2 ul{
+                top:-65%;
+            }
+            
+        }
+    }
+}
